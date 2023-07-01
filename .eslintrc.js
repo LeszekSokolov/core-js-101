@@ -15,6 +15,7 @@ module.exports = {
   },
   rules: {
     'linebreak-style': 0,
+    // 'comma-dangle': ['error', 'never'],
     'no-unused-vars': [
       'error',
       { vars: 'all', args: 'after-used', ignoreRestSiblings: false },
