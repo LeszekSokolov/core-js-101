@@ -60,9 +60,11 @@ function getPowerFunction(exponent) {
  *   getPolynom()      => null
  */
 
-function getPolynom() {
-  throw new Error('Not implemented');
+function getPolynom(...a) {
+  if (!a) return null;
+  return (n) => [...a].reverse().reduce((acc, arg, i) => acc + arg * n ** i, 0);
 }
+
 /**
  * Memoizes passed function and returns function
  * which invoked first time calls the passed function and then always returns cached result.
